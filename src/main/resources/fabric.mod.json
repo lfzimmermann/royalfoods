@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "royalfoods",
   "version": "${version}",
 
-  "name": "Example Mod",
+  "name": "Royal Foods",
   "description": "This mod aims to help new BTA modders.",
   "authors": [
-    "Turnip Labs"
+    "Luca Zimmermann (Kagenao)"
   ],
   "contact": {
     "homepage": "",
@@ -19,20 +19,23 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-			"turniplabs.examplemod.ExampleMod"
+			"kagenao.royalfoods.RoyalFoods"
     ],
 		"beforeGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"kagenao.royalfoods.RoyalFoods"
 		],
 		"afterGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"kagenao.royalfoods.RoyalFoods"
 		],
 		"recipesReady": [
-			"turniplabs.examplemod.ExampleMod"
+			"kagenao.royalfoods.RoyalRecipes"
+		],
+		"initModels" : [
+			"kagenao.royalfoods.RoyalModels"
 		]
 	},
   "mixins": [
-      "examplemod.mixins.json"
+		"royalfoods.mixins.json"
   ],
 
   "depends": {
