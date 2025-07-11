@@ -2,6 +2,10 @@
 
 Bring _back_ more food sources from **modern** Minecraft!
 
+# Features
+
+At this point only adds raw and cooked mutton, and adds it as a drop to sheeps.
+
 ## Prerequisites
 - JDK for Java 17 ([Eclipse Temurin](https://adoptium.net/temurin/releases/) recommended)
 - [Intellij IDEA](https://www.jetbrains.com/idea/download/) (Scroll down for the free community edition, if using linux **DO NOT** use the flatpak distribution)
