@@ -7,9 +7,6 @@ import org.slf4j.LoggerFactory;
 import turniplabs.halplibe.helper.ItemBuilder;
 import turniplabs.halplibe.util.GameStartEntrypoint;
 
-import java.util.HashMap;
-
-
 public class RoyalFoods implements ModInitializer, GameStartEntrypoint {
     public static final String MODID = "royalfoods";
     public static final Logger LOGGER = LoggerFactory.getLogger(MODID);
@@ -20,8 +17,8 @@ public class RoyalFoods implements ModInitializer, GameStartEntrypoint {
 	public static Item cooked_mutton;
     @Override
     public void onInitialize() {
-		raw_mutton = itemBuilder.setStackSize(4).build(new FoodItem("raw_mutton", "royalfoods:item/raw_mutton", 19000));
-        cooked_mutton = itemBuilder.setStackSize(4).build(new FoodItem("cooked_mutton", "royalfoods:item/cooked_mutton", 19001));
+		raw_mutton = itemBuilder.setStackSize(4).build(new FoodItem("raw_mutton", "royalfoods:item/raw_mutton", 19000, 4, 20, false, 4));
+        cooked_mutton = itemBuilder.setStackSize(4).build(new FoodItem("cooked_mutton", "royalfoods:item/cooked_mutton", 19001, 8, 15, false, 4));
 		LOGGER.info("RoyalFoods initialized.");
 
     }
